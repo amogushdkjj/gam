@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dl77ukkoejtxl"]
 
-[ext_resource type="Texture2D" uid="uid://djfyrk0ij8v8s" path="res://New Piskel (5).png" id="1_24k83"]
+[ext_resource type="Texture2D" uid="uid://djfyrk0ij8v8s" path="res://pngs/New Piskel (5).png" id="1_24k83"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b0lfj"]
 radius = 41.0122

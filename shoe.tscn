@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6qhrd2dbl17x"]
+
+[ext_resource type="Texture2D" uid="uid://cud6evkeigt28" path="res://pngs/itemshop2.png" id="1_kyx8p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkxu1"]
+size = Vector2(77, 73)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Itemshop2" type="Sprite2D" parent="."]
+position = Vector2(18, -2)
+texture = ExtResource("1_kyx8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, -7.5)
+shape = SubResource("RectangleShape2D_vkxu1")

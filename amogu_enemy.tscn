@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://btqmbijfu5coy"]
+[gd_scene load_steps=4 format=3 uid="uid://btqmbijfu5coy"]
 
-[ext_resource type="Texture2D" uid="uid://b3lcjfkbt84nv" path="res://New Piskel (7).png" id="1_i5py4"]
+[ext_resource type="Script" path="res://amogu_enemy.gd" id="1_ewlvy"]
+[ext_resource type="Texture2D" uid="uid://b3lcjfkbt84nv" path="res://pngs/New Piskel (7).png" id="1_i5py4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mh1go"]
 radius = 23.0
 height = 64.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ewlvy")
 
 [node name="NewPiskel(7)" type="Sprite2D" parent="."]
 position = Vector2(-1, -2)

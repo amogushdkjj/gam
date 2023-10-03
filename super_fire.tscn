@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://brwoh8c4eb76f"]
 
-[ext_resource type="Texture2D" uid="uid://cg83ybwu4gkyo" path="res://New Piskel (10).png" id="1_7ixme"]
+[ext_resource type="Texture2D" uid="uid://cg83ybwu4gkyo" path="res://pngs/New Piskel (10).png" id="1_7ixme"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28omg"]
 size = Vector2(206, 214)
