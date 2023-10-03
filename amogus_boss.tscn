@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://d36qineba6fow"]
+
+[ext_resource type="Texture2D" uid="uid://04a5nokdc5hv" path="res://amogus.png" id="1_md6ly"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iu6rc"]
+size = Vector2(87, 324)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmv0m"]
+size = Vector2(170, 84)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Amogus" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_md6ly")
+hframes = 2
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11.5, 20)
+shape = SubResource("RectangleShape2D_iu6rc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(16, -27)
+shape = SubResource("RectangleShape2D_gmv0m")

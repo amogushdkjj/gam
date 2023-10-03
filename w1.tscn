@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjsryu3mn1l3j"]
+
+[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://New Piskel-1.png.png" id="1_r6jhh"]
+[ext_resource type="Texture2D" uid="uid://dkqbuqprbpcg5" path="res://New Piskel-1.png (1).png" id="2_ekto1"]
+[ext_resource type="PackedScene" uid="uid://d13d2r6fcgy6e" path="res://grass1.tscn" id="3_nv0ql"]
+[ext_resource type="Texture2D" uid="uid://byrr04y7ss0wa" path="res://New Piskel-3.png.png" id="4_65jxm"]
+[ext_resource type="PackedScene" uid="uid://g2iqvyxa8li1" path="res://mc.tscn" id="5_5wb4h"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="NewPiskel-1_png" type="Sprite2D" parent="."]
+position = Vector2(1205, 321)
+scale = Vector2(6.926, 4.44895)
+texture = ExtResource("1_r6jhh")
+
+[node name="NewPiskel-1_png(1)2" type="Sprite2D" parent="."]
+position = Vector2(260, 486)
+scale = Vector2(1.83, 1.855)
+texture = ExtResource("2_ekto1")
+
+[node name="NewPiskel-1_png(1)" type="Sprite2D" parent="."]
+position = Vector2(1076, 420)
+scale = Vector2(2.65, 2.865)
+texture = ExtResource("2_ekto1")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_nv0ql")]
+position = Vector2(992, 618)
+scale = Vector2(5.68686, 1.64744)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_5wb4h")]
+position = Vector2(154, 330)
+scale = Vector2(0.68, 0.68)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="NewPiskel-3_png" type="Sprite2D" parent="."]
+position = Vector2(334, 374)
+scale = Vector2(2.06, 2.33483)
+texture = ExtResource("4_65jxm")
+
+[node name="NewPiskel-3_png2" type="Sprite2D" parent="."]
+position = Vector2(1053, 496)
+scale = Vector2(1.488, 1.63514)
+texture = ExtResource("4_65jxm")
