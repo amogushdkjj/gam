@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+var amoghp = 20
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0

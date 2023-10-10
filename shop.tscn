@@ -1,0 +1,55 @@
+[gd_scene load_steps=12 format=3 uid="uid://b1dxymuc7p1bp"]
+
+[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_0mpjj"]
+[ext_resource type="PackedScene" uid="uid://di25xdnkok18g" path="res://opened_shop.tscn" id="2_23bhf"]
+[ext_resource type="PackedScene" uid="uid://o278gog382rp" path="res://frog_salesman.tscn" id="2_ao3j7"]
+[ext_resource type="PackedScene" uid="uid://ck7kolfdyor3o" path="res://sword.tscn" id="3_urqa2"]
+[ext_resource type="PackedScene" uid="uid://c6qhrd2dbl17x" path="res://shoe.tscn" id="4_51mnu"]
+[ext_resource type="PackedScene" uid="uid://dmy34kcdu45qo" path="res://life.tscn" id="5_5yj00"]
+[ext_resource type="PackedScene" uid="uid://gnnr3jhdtaw6" path="res://carrot.tscn" id="6_txssr"]
+[ext_resource type="PackedScene" uid="uid://vtxoqiom7smv" path="res://sword2.tscn" id="7_wai7x"]
+[ext_resource type="PackedScene" uid="uid://gg1lerlr2mjk" path="res://bucklemyshoe.tscn" id="8_vtnn7"]
+[ext_resource type="PackedScene" uid="uid://dbabfw5uxqmfi" path="res://life2.tscn" id="9_go6vl"]
+[ext_resource type="PackedScene" uid="uid://buf5u4wbonbd8" path="res://goldapple.tscn" id="10_apssd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="NewPiskel-1_png" type="Sprite2D" parent="."]
+position = Vector2(609, 342.25)
+scale = Vector2(2.498, 2.17267)
+texture = ExtResource("1_0mpjj")
+
+[node name="Area2D9" parent="." instance=ExtResource("2_ao3j7")]
+position = Vector2(571, 199)
+scale = Vector2(1.55838, 1.55838)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_23bhf")]
+position = Vector2(606, 428)
+scale = Vector2(3.89637, 3.32537)
+
+[node name="Area2D" parent="." instance=ExtResource("3_urqa2")]
+position = Vector2(229, 487)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_51mnu")]
+position = Vector2(476, 479)
+scale = Vector2(1.61323, 1.78436)
+
+[node name="Area2D3" parent="." instance=ExtResource("5_5yj00")]
+position = Vector2(713, 467)
+
+[node name="Area2D4" parent="." instance=ExtResource("6_txssr")]
+position = Vector2(939, 467)
+
+[node name="Area2D5" parent="." instance=ExtResource("7_wai7x")]
+position = Vector2(229, 695)
+
+[node name="Area2D6" parent="." instance=ExtResource("8_vtnn7")]
+position = Vector2(461, 674)
+scale = Vector2(1.88, 2.28)
+
+[node name="Area2D7" parent="." instance=ExtResource("9_go6vl")]
+position = Vector2(705, 676)
+
+[node name="Area2D8" parent="." instance=ExtResource("10_apssd")]
+position = Vector2(938, 667)
+scale = Vector2(1.58609, 1.70971)
