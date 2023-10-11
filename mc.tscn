@@ -6,21 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jruwf"]
 size = Vector2(62, 148)
 
-[sub_resource type="Animation" id="Animation_4nnf4"]
-resource_name = "walk_r"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [1, 2, 3, 2]
-}
-
 [sub_resource type="Animation" id="Animation_mko6k"]
 length = 0.001
 tracks/0/type = "value"
@@ -33,11 +18,11 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [1]
+"values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_f6h8t"]
-resource_name = "walk_l"
+[sub_resource type="Animation" id="Animation_0nhlc"]
+resource_name = "die_l"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -45,10 +30,55 @@ tracks/0/path = NodePath("NewPiskel(4):frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [4, 5, 6, 5]
+"values": [15]
+}
+
+[sub_resource type="Animation" id="Animation_6x7ie"]
+resource_name = "die_r"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20]
+}
+
+[sub_resource type="Animation" id="Animation_4ur6t"]
+resource_name = "hit_l"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [19]
+}
+
+[sub_resource type="Animation" id="Animation_1oprg"]
+resource_name = "hit_r"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [14]
 }
 
 [sub_resource type="Animation" id="Animation_yg28r"]
@@ -75,10 +105,10 @@ tracks/0/path = NodePath("NewPiskel(4):frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [7, 8]
+"values": [7, 8, 8]
 }
 
 [sub_resource type="Animation" id="Animation_ldpnl"]
@@ -90,100 +120,10 @@ tracks/0/path = NodePath("NewPiskel(4):frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [9, 10]
-}
-
-[sub_resource type="Animation" id="Animation_aglij"]
-resource_name = "punch_r"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [11]
-}
-
-[sub_resource type="Animation" id="Animation_f1nwj"]
-resource_name = "kick_r"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [12]
-}
-
-[sub_resource type="Animation" id="Animation_6qhft"]
-resource_name = "shoot_r"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [13]
-}
-
-[sub_resource type="Animation" id="Animation_1oprg"]
-resource_name = "hit_r"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [14]
-}
-
-[sub_resource type="Animation" id="Animation_0nhlc"]
-resource_name = "die_l"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [15]
-}
-
-[sub_resource type="Animation" id="Animation_lnlxg"]
-resource_name = "punch_l"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("NewPiskel(4):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [16]
+"values": [9, 10, 10]
 }
 
 [sub_resource type="Animation" id="Animation_pfe1b"]
@@ -201,6 +141,51 @@ tracks/0/keys = {
 "values": [17]
 }
 
+[sub_resource type="Animation" id="Animation_f1nwj"]
+resource_name = "kick_r"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+
+[sub_resource type="Animation" id="Animation_lnlxg"]
+resource_name = "punch_l"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [16]
+}
+
+[sub_resource type="Animation" id="Animation_aglij"]
+resource_name = "punch_r"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+
 [sub_resource type="Animation" id="Animation_mrjor"]
 resource_name = "shoot_l"
 tracks/0/type = "value"
@@ -216,8 +201,8 @@ tracks/0/keys = {
 "values": [18]
 }
 
-[sub_resource type="Animation" id="Animation_4ur6t"]
-resource_name = "hit_l"
+[sub_resource type="Animation" id="Animation_6qhft"]
+resource_name = "shoot_r"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -228,11 +213,11 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [19]
+"values": [13]
 }
 
-[sub_resource type="Animation" id="Animation_6x7ie"]
-resource_name = "die_r"
+[sub_resource type="Animation" id="Animation_f6h8t"]
+resource_name = "walk_l"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -240,10 +225,25 @@ tracks/0/path = NodePath("NewPiskel(4):frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [20]
+"values": [4, 5, 6, 5]
+}
+
+[sub_resource type="Animation" id="Animation_4nnf4"]
+resource_name = "walk_r"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewPiskel(4):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 2]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mdh4h"]
@@ -274,7 +274,6 @@ position = Vector2(-3, -6)
 texture = ExtResource("2_l3ggm")
 hframes = 5
 vframes = 5
-frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, 7)

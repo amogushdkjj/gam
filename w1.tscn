@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://bjsryu3mn1l3j"]
+[gd_scene load_steps=12 format=3 uid="uid://bjsryu3mn1l3j"]
 
-[ext_resource type="Script" path="res://w1.gd" id="1_2yt10"]
+[ext_resource type="Script" path="res://Global.gd" id="1_lc2gy"]
 [ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_nbyu4"]
 [ext_resource type="Texture2D" uid="uid://dkqbuqprbpcg5" path="res://pngs/New Piskel-1.png (1).png" id="2_ha4cm"]
 [ext_resource type="PackedScene" uid="uid://oii1cgah8h25" path="res://dirt.tscn" id="3_hfos2"]
@@ -10,9 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://btqmbijfu5coy" path="res://amogu_enemy.tscn" id="6_dt5dh"]
 [ext_resource type="Script" path="res://tutorial.gd" id="7_6onfi"]
 [ext_resource type="PackedScene" uid="uid://d36qineba6fow" path="res://amogus_boss.tscn" id="9_efuee"]
+[ext_resource type="Script" path="res://healthbarplayer.gd" id="11_vr5im"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_2yt10")
+script = ExtResource("1_lc2gy")
 
 [node name="NewPiskel-1_png" type="Sprite2D" parent="."]
 position = Vector2(3329.75, 722)
@@ -127,5 +128,14 @@ scale = Vector2(4.57883, 2.20483)
 
 [node name="CharacterBody2D4" parent="." instance=ExtResource("9_efuee")]
 position = Vector2(5853, 1378)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 564.0
+offset_top = 19.0
+offset_right = 721.0
+offset_bottom = 46.0
+script = ExtResource("11_vr5im")
 
 [connection signal="pressed" from="CharacterBody2D/Camera2D/Button" to="CharacterBody2D/Camera2D/Button" method="_on_pressed"]
