@@ -1,0 +1,8 @@
+~ shop
+
+Frog: howdy want to buy some goods???
+-nah => END
+-ok 
+	
+
+=> END

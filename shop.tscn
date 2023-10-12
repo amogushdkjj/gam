@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1dxymuc7p1bp"]
+[gd_scene load_steps=13 format=3 uid="uid://b1dxymuc7p1bp"]
 
 [ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_0mpjj"]
 [ext_resource type="PackedScene" uid="uid://di25xdnkok18g" path="res://opened_shop.tscn" id="2_23bhf"]
@@ -11,17 +11,18 @@
 [ext_resource type="PackedScene" uid="uid://gg1lerlr2mjk" path="res://bucklemyshoe.tscn" id="8_vtnn7"]
 [ext_resource type="PackedScene" uid="uid://dbabfw5uxqmfi" path="res://life2.tscn" id="9_go6vl"]
 [ext_resource type="PackedScene" uid="uid://buf5u4wbonbd8" path="res://goldapple.tscn" id="10_apssd"]
+[ext_resource type="PackedScene" uid="uid://dnd04hs562g3m" path="res://leave_button.tscn" id="12_gq7pe"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="NewPiskel-1_png" type="Sprite2D" parent="."]
 position = Vector2(609, 342.25)
-scale = Vector2(2.498, 2.17267)
+scale = Vector2(2.498, 3.01267)
 texture = ExtResource("1_0mpjj")
 
 [node name="Area2D9" parent="." instance=ExtResource("2_ao3j7")]
-position = Vector2(571, 199)
-scale = Vector2(1.55838, 1.55838)
+position = Vector2(581, 239)
+scale = Vector2(0.866269, 0.866269)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_23bhf")]
 position = Vector2(606, 428)
@@ -53,3 +54,13 @@ position = Vector2(705, 676)
 [node name="Area2D8" parent="." instance=ExtResource("10_apssd")]
 position = Vector2(938, 667)
 scale = Vector2(1.58609, 1.70971)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(615, 457)
+scale = Vector2(3.45629, 1.69426)
+
+[node name="Button" parent="." instance=ExtResource("12_gq7pe")]
+offset_left = 952.0
+offset_top = 163.0
+offset_right = 1035.0
+offset_bottom = 203.0

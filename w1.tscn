@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bjsryu3mn1l3j"]
+[gd_scene load_steps=13 format=3 uid="uid://bjsryu3mn1l3j"]
 
 [ext_resource type="Script" path="res://Global.gd" id="1_lc2gy"]
 [ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_nbyu4"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://tutorial.gd" id="7_6onfi"]
 [ext_resource type="PackedScene" uid="uid://d36qineba6fow" path="res://amogus_boss.tscn" id="9_efuee"]
 [ext_resource type="Script" path="res://healthbarplayer.gd" id="11_vr5im"]
+[ext_resource type="PackedScene" uid="uid://cv6idl7vxuga6" path="res://nextscen.tscn" id="12_f2d8v"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_lc2gy")
@@ -51,14 +52,7 @@ position = Vector2(154, 330)
 scale = Vector2(0.68, 0.68)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-
-[node name="Button" type="Button" parent="CharacterBody2D/Camera2D"]
-offset_left = -366.176
-offset_top = -452.941
-offset_right = 384.824
-offset_bottom = -288.941
-text = "Hi this is the tutorial!!!!!!1 Click to next"
-script = ExtResource("7_6onfi")
+position = Vector2(0, -58.8235)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("6_dt5dh")]
 position = Vector2(1776, 523)
@@ -132,10 +126,21 @@ position = Vector2(5853, 1378)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_left = 564.0
+offset_left = 921.0
 offset_top = 19.0
-offset_right = 721.0
+offset_right = 1078.0
 offset_bottom = 46.0
 script = ExtResource("11_vr5im")
 
-[connection signal="pressed" from="CharacterBody2D/Camera2D/Button" to="CharacterBody2D/Camera2D/Button" method="_on_pressed"]
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 122.0
+offset_top = 19.0
+offset_right = 873.0
+offset_bottom = 183.0
+text = "Hi this is the tutorial!!!!!!1 Click to next"
+script = ExtResource("7_6onfi")
+
+[node name="Area2D" parent="." instance=ExtResource("12_f2d8v")]
+position = Vector2(6176, 1509)
+
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]

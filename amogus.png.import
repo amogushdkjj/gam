@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://04a5nokdc5hv"
-path="res://.godot/imported/amogus.png-f29e88478dee4a56ea5f8eb2511781a7.ctex"
+path="res://.godot/imported/amogus.png-b66cbb90932fd97c3fa50fd668b8b93a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://amogus.png"
-dest_files=["res://.godot/imported/amogus.png-f29e88478dee4a56ea5f8eb2511781a7.ctex"]
+source_file="res://pngs/amogus.png"
+dest_files=["res://.godot/imported/amogus.png-b66cbb90932fd97c3fa50fd668b8b93a.ctex"]
 
 [params]
 

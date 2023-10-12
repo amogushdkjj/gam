@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://0nta7remtq3n"]
+[gd_scene load_steps=7 format=3 uid="uid://0nta7remtq3n"]
 
 [ext_resource type="Texture2D" uid="uid://bhn33mcg4xjq1" path="res://pngs/new-1.png.png" id="1_e5wdx"]
 [ext_resource type="PackedScene" uid="uid://d13d2r6fcgy6e" path="res://grass1.tscn" id="2_5ngro"]
 [ext_resource type="PackedScene" uid="uid://g2iqvyxa8li1" path="res://mc.tscn" id="3_b2bod"]
 [ext_resource type="PackedScene" uid="uid://o278gog382rp" path="res://frog_salesman.tscn" id="4_dehba"]
+[ext_resource type="Script" path="res://salesman.gd" id="5_4lpho"]
+[ext_resource type="Script" path="res://talk_button.gd" id="6_bhima"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -22,7 +24,11 @@ position = Vector2(2813, 1899)
 scale = Vector2(6.16, 3.52)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_b2bod")]
-position = Vector2(269, 747)
+position = Vector2(145, 633)
+scale = Vector2(0.772448, 0.772448)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(2, -81)
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_5ngro")]
 position = Vector2(-190, 1100)
@@ -37,4 +43,20 @@ position = Vector2(1090, 1580)
 scale = Vector2(2.11767, 7.71673)
 
 [node name="Area2D" parent="." instance=ExtResource("4_dehba")]
-position = Vector2(2553, 1724)
+position = Vector2(2553, 1745)
+scale = Vector2(0.72967, 0.72967)
+script = ExtResource("5_4lpho")
+
+[node name="Button" type="Button" parent="Area2D"]
+offset_left = -45.2261
+offset_top = -202.831
+offset_right = -7.22607
+offset_bottom = -171.831
+scale = Vector2(2.31566, 1.8223)
+text = "talk"
+script = ExtResource("6_bhima")
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="pressed" from="Area2D/Button" to="Area2D/Button" method="_on_pressed"]

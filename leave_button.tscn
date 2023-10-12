@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnd04hs562g3m"]
+
+[ext_resource type="Texture2D" uid="uid://d0stalnsrldmn" path="res://New Piskel (15).png" id="1_4qcle"]
+[ext_resource type="Script" path="res://leave_shop.gd" id="2_8xv6y"]
+
+[node name="Button" type="Button"]
+offset_left = -26.0
+offset_top = -24.0
+offset_right = 14.0
+offset_bottom = 16.0
+scale = Vector2(1.27439, 1.47833)
+text = "leave"
+icon = ExtResource("1_4qcle")
+script = ExtResource("2_8xv6y")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
