@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bjsryu3mn1l3j"]
+[gd_scene load_steps=14 format=3 uid="uid://bjsryu3mn1l3j"]
 
 [ext_resource type="Script" path="res://Global.gd" id="1_lc2gy"]
 [ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_nbyu4"]
@@ -10,8 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://btqmbijfu5coy" path="res://amogu_enemy.tscn" id="6_dt5dh"]
 [ext_resource type="Script" path="res://tutorial.gd" id="7_6onfi"]
 [ext_resource type="PackedScene" uid="uid://d36qineba6fow" path="res://amogus_boss.tscn" id="9_efuee"]
-[ext_resource type="Script" path="res://healthbarplayer.gd" id="11_vr5im"]
+[ext_resource type="Script" path="res://playerhealth.gd" id="10_54reh"]
 [ext_resource type="PackedScene" uid="uid://cv6idl7vxuga6" path="res://nextscen.tscn" id="12_f2d8v"]
+[ext_resource type="PackedScene" uid="uid://t4fjigipemjj" path="res://you_hit.tscn" id="12_uke3t"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_lc2gy")
@@ -53,6 +54,10 @@ scale = Vector2(0.68, 0.68)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(0, -58.8235)
+
+[node name="Area2D" parent="CharacterBody2D" instance=ExtResource("12_uke3t")]
+position = Vector2(57.3529, 4.41177)
+scale = Vector2(1.47059, 1.47059)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("6_dt5dh")]
 position = Vector2(1776, 523)
@@ -130,7 +135,7 @@ offset_left = 921.0
 offset_top = 19.0
 offset_right = 1078.0
 offset_bottom = 46.0
-script = ExtResource("11_vr5im")
+script = ExtResource("10_54reh")
 
 [node name="Button" type="Button" parent="CanvasLayer"]
 offset_left = 122.0
@@ -142,5 +147,9 @@ script = ExtResource("7_6onfi")
 
 [node name="Area2D" parent="." instance=ExtResource("12_f2d8v")]
 position = Vector2(6176, 1509)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("3_hfos2")]
+position = Vector2(3395, 1454)
+scale = Vector2(2.24, 7.44)
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]

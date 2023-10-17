@@ -18,3 +18,8 @@ vframes = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2)
 shape = SubResource("CapsuleShape2D_mh1go")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_top = -72.0
+offset_right = 4.0
+offset_bottom = -45.0

@@ -1,10 +1,6 @@
 extends CharacterBody2D
 @onready var _animation_player = $AnimationPlayer
 
-var lives = 3
-var hp = 100
-var maxhp = 100
-var atk = 3
 var spd = 3
 
 const SPEED = 150.0 
@@ -26,7 +22,15 @@ func _physics_process(delta):
 		jumps = 1
 		velocity.y = JUMP_VELOCITY
 		
+	if direction == 1:
+		Global.playerdirection = "r"
+	if direction == -1:
+		Global.playerdirection = "l"
+	if direction == 0:
+		Global.playerdirection = "r"
+		
 	if not is_on_floor():
+		Global.Attack = 0
 		if direction == 1:
 			_animation_player.play("jump_r")
 		if direction == -1:
@@ -46,16 +50,20 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	if Input.is_action_pressed("ui_right") and is_on_floor():
+		Global.Attack = 0
 		_animation_player.play("walk_r")
 		
 	if Input.is_action_pressed("ui_left") and is_on_floor():
+		Global.Attack = 0
 		_animation_player.play("walk_l")
 		
 	if direction == 0 and is_on_floor():
+		Global.Attack = 0
 		_animation_player.play("idl")
 	move_and_slide()
 	
 	if Input.is_action_pressed("punch"):
+		Global.Attack = "punch"
 		if direction == 1:
 			_animation_player.play("punch_r")
 		if direction == -1:
@@ -64,6 +72,7 @@ func _physics_process(delta):
 			_animation_player.play("punch_r")
 
 	if Input.is_action_pressed("kick"):
+		Global.Attack = "kick"
 		if direction == 1:
 			_animation_player.play("kick_r")
 		if direction == -1:
@@ -72,11 +81,13 @@ func _physics_process(delta):
 			_animation_player.play("kick_r")
 			
 	if Input.is_action_pressed("shoot"):
+		Global.Attack = "shoot"
 		if direction == 1:
 			_animation_player.play("shoot_r")
 		if direction == -1:
 			_animation_player.play("shoot_l")
 		if direction == 0:
 			_animation_player.play("shoot_r")
+
 
 	
