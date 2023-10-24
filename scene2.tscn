@@ -19,6 +19,20 @@ position = Vector2(7612, 1157)
 scale = Vector2(10.3738, 7.75862)
 texture = ExtResource("1_e5wdx")
 
+[node name="Area2D" parent="." instance=ExtResource("4_dehba")]
+position = Vector2(420, 805)
+scale = Vector2(0.72967, 0.72967)
+script = ExtResource("5_4lpho")
+
+[node name="Button" type="Button" parent="Area2D"]
+offset_left = -45.2261
+offset_top = -202.831
+offset_right = -7.22607
+offset_bottom = -171.831
+scale = Vector2(2.31566, 1.8223)
+text = "talk"
+script = ExtResource("6_bhima")
+
 [node name="StaticBody2D" parent="." instance=ExtResource("2_5ngro")]
 position = Vector2(2813, 1899)
 scale = Vector2(6.16, 3.52)
@@ -42,21 +56,7 @@ scale = Vector2(1.0765, 9.39316)
 position = Vector2(1090, 1580)
 scale = Vector2(2.11767, 7.71673)
 
-[node name="Area2D" parent="." instance=ExtResource("4_dehba")]
-position = Vector2(2553, 1745)
-scale = Vector2(0.72967, 0.72967)
-script = ExtResource("5_4lpho")
-
-[node name="Button" type="Button" parent="Area2D"]
-offset_left = -45.2261
-offset_top = -202.831
-offset_right = -7.22607
-offset_bottom = -171.831
-scale = Vector2(2.31566, 1.8223)
-text = "talk"
-script = ExtResource("6_bhima")
-
-[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
 [connection signal="pressed" from="Area2D/Button" to="Area2D/Button" method="_on_pressed"]

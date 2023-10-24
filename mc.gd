@@ -89,5 +89,11 @@ func _physics_process(delta):
 		if direction == 0:
 			_animation_player.play("shoot_r")
 
-
+func joe():
+	Global.money += 5
+	print(Global.money)
+	
+func takedamage():
+	Global.hp -= Global.Amogboss_hit_damage
+	print(Global.hp)
 	
