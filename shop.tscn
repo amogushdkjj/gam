@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b1dxymuc7p1bp"]
+[gd_scene load_steps=14 format=3 uid="uid://b1dxymuc7p1bp"]
 
 [ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_0mpjj"]
 [ext_resource type="PackedScene" uid="uid://di25xdnkok18g" path="res://opened_shop.tscn" id="2_23bhf"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dbabfw5uxqmfi" path="res://life2.tscn" id="9_go6vl"]
 [ext_resource type="PackedScene" uid="uid://buf5u4wbonbd8" path="res://goldapple.tscn" id="10_apssd"]
 [ext_resource type="PackedScene" uid="uid://dnd04hs562g3m" path="res://leave_button.tscn" id="12_gq7pe"]
+[ext_resource type="Script" path="res://textlabl.gd" id="13_ym3r2"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -64,3 +65,18 @@ offset_left = 952.0
 offset_top = 163.0
 offset_right = 1035.0
 offset_bottom = 203.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 100.0
+offset_top = 185.0
+offset_right = 221.0
+offset_bottom = 225.0
+text = "your Money:"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="RichTextLabel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 23.0
+offset_right = 42.0
+offset_bottom = 63.0
+script = ExtResource("13_ym3r2")

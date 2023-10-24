@@ -6,6 +6,7 @@ extends Area2D
 func _process(delta):
 	if int(Global.Attack) == 0:
 		visible = false
+		_animation_player.play("RESET")
 	if str(Global.Attack) == "punch":
 		visible = true
 		if str(Global.playerdirection) == "l":
@@ -21,6 +22,9 @@ func _process(delta):
 			_animation_player.play("kick_r")
 		
 
-		
+func _on_body_entered(body):
+		if body.has_method("damage"):
+			body.damage()
+
 
 

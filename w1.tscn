@@ -32,6 +32,51 @@ position = Vector2(1076, 420)
 scale = Vector2(2.65, 2.865)
 texture = ExtResource("2_ha4cm")
 
+[node name="NewPiskel-1_png(1)6" type="Sprite2D" parent="."]
+position = Vector2(4472, 1436)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)8" type="Sprite2D" parent="."]
+position = Vector2(5004, 1428)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)7" type="Sprite2D" parent="."]
+position = Vector2(4738, 1436)
+scale = Vector2(3.52349, 3.47441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)9" type="Sprite2D" parent="."]
+position = Vector2(5275.35, 1444.44)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)10" type="Sprite2D" parent="."]
+position = Vector2(5807.35, 1436.44)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)11" type="Sprite2D" parent="."]
+position = Vector2(5541.35, 1444.44)
+scale = Vector2(3.52349, 3.47441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)12" type="Sprite2D" parent="."]
+position = Vector2(6019.35, 1444.44)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)13" type="Sprite2D" parent="."]
+position = Vector2(6551.35, 1436.44)
+scale = Vector2(3.40349, 2.91441)
+texture = ExtResource("2_ha4cm")
+
+[node name="NewPiskel-1_png(1)14" type="Sprite2D" parent="."]
+position = Vector2(6285.35, 1444.44)
+scale = Vector2(3.52349, 3.47441)
+texture = ExtResource("2_ha4cm")
+
 [node name="StaticBody2D8" parent="." instance=ExtResource("3_hfos2")]
 position = Vector2(2743, 883)
 scale = Vector2(5.54505, 2.23523)
@@ -50,10 +95,11 @@ scale = Vector2(5.73744, 1.92)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("5_5wb4h")]
 position = Vector2(154, 330)
-scale = Vector2(0.68, 0.68)
+scale = Vector2(0.671963, 0.671963)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(0, -58.8235)
+scale = Vector2(-106.527, 1.38716)
 
 [node name="Area2D" parent="CharacterBody2D" instance=ExtResource("12_uke3t")]
 position = Vector2(57.3529, 4.41177)
@@ -151,5 +197,8 @@ position = Vector2(6176, 1509)
 [node name="StaticBody2D10" parent="." instance=ExtResource("3_hfos2")]
 position = Vector2(3395, 1454)
 scale = Vector2(2.24, 7.44)
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("6_dt5dh")]
+position = Vector2(967, 505)
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
