@@ -1,15 +1,15 @@
 [gd_scene load_steps=14 format=3 uid="uid://bjsryu3mn1l3j"]
 
 [ext_resource type="Script" path="res://Global.gd" id="1_lc2gy"]
-[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_nbyu4"]
-[ext_resource type="Texture2D" uid="uid://dkqbuqprbpcg5" path="res://pngs/New Piskel-1.png (1).png" id="2_ha4cm"]
+[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://New Piskel-1.png.png" id="2_3jay0"]
 [ext_resource type="PackedScene" uid="uid://oii1cgah8h25" path="res://dirt.tscn" id="3_hfos2"]
 [ext_resource type="PackedScene" uid="uid://d13d2r6fcgy6e" path="res://grass1.tscn" id="3_nv0ql"]
+[ext_resource type="Texture2D" uid="uid://dkqbuqprbpcg5" path="res://New Piskel-1.png (1).png" id="3_qc2h7"]
 [ext_resource type="PackedScene" uid="uid://g2iqvyxa8li1" path="res://mc.tscn" id="5_5wb4h"]
-[ext_resource type="Texture2D" uid="uid://byrr04y7ss0wa" path="res://pngs/New Piskel-3.png.png" id="5_33pp5"]
 [ext_resource type="PackedScene" uid="uid://btqmbijfu5coy" path="res://amogu_enemy.tscn" id="6_dt5dh"]
 [ext_resource type="Script" path="res://tutorial.gd" id="7_6onfi"]
 [ext_resource type="PackedScene" uid="uid://d36qineba6fow" path="res://amogus_boss.tscn" id="9_efuee"]
+[ext_resource type="Texture2D" uid="uid://byrr04y7ss0wa" path="res://New Piskel-3.png.png" id="9_me2n2"]
 [ext_resource type="Script" path="res://playerhealth.gd" id="10_54reh"]
 [ext_resource type="PackedScene" uid="uid://cv6idl7vxuga6" path="res://nextscen.tscn" id="12_f2d8v"]
 [ext_resource type="PackedScene" uid="uid://t4fjigipemjj" path="res://you_hit.tscn" id="12_uke3t"]
@@ -20,62 +20,62 @@ script = ExtResource("1_lc2gy")
 [node name="NewPiskel-1_png" type="Sprite2D" parent="."]
 position = Vector2(3329.75, 722)
 scale = Vector2(16.769, 8.11411)
-texture = ExtResource("1_nbyu4")
+texture = ExtResource("2_3jay0")
 
 [node name="NewPiskel-1_png(1)2" type="Sprite2D" parent="."]
 position = Vector2(260, 486)
 scale = Vector2(1.83, 1.855)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)" type="Sprite2D" parent="."]
 position = Vector2(1076, 420)
 scale = Vector2(2.65, 2.865)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)6" type="Sprite2D" parent="."]
 position = Vector2(4472, 1436)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)8" type="Sprite2D" parent="."]
 position = Vector2(5004, 1428)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)7" type="Sprite2D" parent="."]
 position = Vector2(4738, 1436)
 scale = Vector2(3.52349, 3.47441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)9" type="Sprite2D" parent="."]
 position = Vector2(5275.35, 1444.44)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)10" type="Sprite2D" parent="."]
 position = Vector2(5807.35, 1436.44)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)11" type="Sprite2D" parent="."]
 position = Vector2(5541.35, 1444.44)
 scale = Vector2(3.52349, 3.47441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)12" type="Sprite2D" parent="."]
 position = Vector2(6019.35, 1444.44)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)13" type="Sprite2D" parent="."]
 position = Vector2(6551.35, 1436.44)
 scale = Vector2(3.40349, 2.91441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)14" type="Sprite2D" parent="."]
 position = Vector2(6285.35, 1444.44)
 scale = Vector2(3.52349, 3.47441)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="StaticBody2D8" parent="." instance=ExtResource("3_hfos2")]
 position = Vector2(2743, 883)
@@ -114,12 +114,12 @@ position = Vector2(1313, 521)
 [node name="NewPiskel-3_png" type="Sprite2D" parent="."]
 position = Vector2(334, 374)
 scale = Vector2(2.06, 2.33483)
-texture = ExtResource("5_33pp5")
+texture = ExtResource("9_me2n2")
 
 [node name="NewPiskel-3_png2" type="Sprite2D" parent="."]
 position = Vector2(1053, 496)
 scale = Vector2(1.488, 1.63514)
-texture = ExtResource("5_33pp5")
+texture = ExtResource("9_me2n2")
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("3_nv0ql")]
 position = Vector2(-560, 504)
@@ -128,12 +128,12 @@ scale = Vector2(2.07606, 20.5897)
 [node name="NewPiskel-3_png3" type="Sprite2D" parent="."]
 position = Vector2(-554, 58)
 scale = Vector2(1.56, 3.76)
-texture = ExtResource("5_33pp5")
+texture = ExtResource("9_me2n2")
 
 [node name="NewPiskel-1_png(1)3" type="Sprite2D" parent="."]
 position = Vector2(-143, 623)
 scale = Vector2(2.96, 2.88)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("3_nv0ql")]
 position = Vector2(5462, 1643)
@@ -150,22 +150,22 @@ scale = Vector2(4.65092, 16.5239)
 [node name="NewPiskel-1_png(1)4" type="Sprite2D" parent="."]
 position = Vector2(4147, 1563)
 scale = Vector2(4.82506, 4.39785)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-1_png(1)5" type="Sprite2D" parent="."]
 position = Vector2(6394, 1639)
 scale = Vector2(3.47, 3.52)
-texture = ExtResource("2_ha4cm")
+texture = ExtResource("3_qc2h7")
 
 [node name="NewPiskel-3_png4" type="Sprite2D" parent="."]
 position = Vector2(2024, 520)
 scale = Vector2(3.122, 1.41291)
-texture = ExtResource("5_33pp5")
+texture = ExtResource("9_me2n2")
 
 [node name="NewPiskel-3_png5" type="Sprite2D" parent="."]
 position = Vector2(3340, 547)
 scale = Vector2(2.582, 1.35886)
-texture = ExtResource("5_33pp5")
+texture = ExtResource("9_me2n2")
 
 [node name="StaticBody2D9" parent="." instance=ExtResource("3_hfos2")]
 position = Vector2(5325, 1923)

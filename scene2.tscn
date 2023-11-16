@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://0nta7remtq3n"]
 
-[ext_resource type="Texture2D" uid="uid://bhn33mcg4xjq1" path="res://pngs/new-1.png.png" id="1_e5wdx"]
+[ext_resource type="Texture2D" uid="uid://bhn33mcg4xjq1" path="res://new-1.png.png" id="1_ttjgh"]
 [ext_resource type="PackedScene" uid="uid://d13d2r6fcgy6e" path="res://grass1.tscn" id="2_5ngro"]
 [ext_resource type="PackedScene" uid="uid://g2iqvyxa8li1" path="res://mc.tscn" id="3_b2bod"]
 [ext_resource type="PackedScene" uid="uid://o278gog382rp" path="res://frog_salesman.tscn" id="4_dehba"]
@@ -12,12 +12,12 @@
 [node name="New-1_png" type="Sprite2D" parent="."]
 position = Vector2(2103.75, 1161.38)
 scale = Vector2(9.99083, 7.79354)
-texture = ExtResource("1_e5wdx")
+texture = ExtResource("1_ttjgh")
 
 [node name="New-1_png2" type="Sprite2D" parent="."]
 position = Vector2(7612, 1157)
 scale = Vector2(10.3738, 7.75862)
-texture = ExtResource("1_e5wdx")
+texture = ExtResource("1_ttjgh")
 
 [node name="Area2D" parent="." instance=ExtResource("4_dehba")]
 position = Vector2(420, 805)

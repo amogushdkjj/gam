@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://b1dxymuc7p1bp"]
 
-[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://pngs/New Piskel-1.png.png" id="1_0mpjj"]
+[ext_resource type="Texture2D" uid="uid://c0nrogp4n28je" path="res://New Piskel-1.png.png" id="1_i52bj"]
 [ext_resource type="PackedScene" uid="uid://di25xdnkok18g" path="res://opened_shop.tscn" id="2_23bhf"]
 [ext_resource type="PackedScene" uid="uid://o278gog382rp" path="res://frog_salesman.tscn" id="2_ao3j7"]
 [ext_resource type="PackedScene" uid="uid://ck7kolfdyor3o" path="res://sword.tscn" id="3_urqa2"]
@@ -19,7 +19,7 @@
 [node name="NewPiskel-1_png" type="Sprite2D" parent="."]
 position = Vector2(609, 342.25)
 scale = Vector2(2.498, 3.01267)
-texture = ExtResource("1_0mpjj")
+texture = ExtResource("1_i52bj")
 
 [node name="Area2D9" parent="." instance=ExtResource("2_ao3j7")]
 position = Vector2(581, 239)
