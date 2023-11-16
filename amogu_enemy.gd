@@ -34,7 +34,10 @@ func damage():
 
 
 
+
+
 func _on_coin_body_entered(body):
 	if body.has_method("joe"):
 		body.joe()
 		queue_free()
+

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://btqmbijfu5coy"]
 
 [ext_resource type="Script" path="res://amogu_enemy.gd" id="1_ewlvy"]
-[ext_resource type="Texture2D" uid="uid://b3lcjfkbt84nv" path="res://pngs/New Piskel (7).png" id="1_i5py4"]
+[ext_resource type="Texture2D" uid="uid://b3lcjfkbt84nv" path="res://New Piskel (7).png" id="2_acudj"]
 [ext_resource type="PackedScene" uid="uid://dklvvne60kdfi" path="res://coin.tscn" id="3_1lfui"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mh1go"]
@@ -173,7 +173,7 @@ script = ExtResource("1_ewlvy")
 
 [node name="NewPiskel(7)" type="Sprite2D" parent="."]
 position = Vector2(-1, -2)
-texture = ExtResource("1_i5py4")
+texture = ExtResource("2_acudj")
 vframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
